@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Template" name="footer_block1" before="-" template="Magento_Theme::html/block.phtml">
+                <arguments>
+                    <argument name="block_title" xsi:type="string">My Account</argument>
+                    <argument name="block_css" xsi:type="string">static-account</argument>
+                </arguments>
+                <block class="Magento\Cms\Block\Block" name="static_account">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer_links_block</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="footer_block2" after="footer_block1" template="Magento_Theme::html/block.phtml">
+                <arguments>
+                    <argument name="block_title" xsi:type="string">Features</argument>
+                    <argument name="block_css" xsi:type="string">static-features</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Links" name="footer_links"/>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="footer_block3" after="footer_block2" template="Magento_Theme::html/block.phtml">
+                <arguments>
+                    <argument name="block_title" xsi:type="string">Contact</argument>
+                    <argument name="block_css" xsi:type="string">static-contact</argument>
+                </arguments>
+                <block class="Magento\Cms\Block\Block" name="static_contact">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer_contact_block</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="report.bugs" remove="true"></referenceBlock>
+    </body>
+</page>
