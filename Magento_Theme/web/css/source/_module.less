@@ -16,7 +16,7 @@
 @message-global-note-link__color-hover: @link__hover__color;
 @message-global-note-link__color-active: @link__active__color;
 
-@message-global-caution__background: @color-red9;
+@message-global-caution__background: @color-white;
 @message-global-caution__border-color: none;
 @message-global-caution__color: @color-white;
 
@@ -25,7 +25,7 @@
 @message-global-caution-link__color-active: @link__active__color;
 
 //  Header
-@header__background-color: false;
+// @header__background-color: @color-red9;
 @header-icons-color: @color-gray56;
 @header-icons-color-hover: @color-gray20;
 
@@ -40,7 +40,7 @@
 @h1__margin-bottom__desktop: @indent__xl;
 
 //  Footer
-@footer__background-color: false;
+// @footer__background-color: @color-red9;
 
 //
 //  Common
@@ -54,7 +54,6 @@
 
     .page-header {
         .lib-css(background-color, @header__background-color);
-        // margin-bottom: @indent__base;
 
         .header.content {
             padding: @layout-indent__width;
@@ -166,6 +165,7 @@
     .page-footer {
         .lib-css(background-color, @footer__background-color);
         margin-top: auto;
+        margin-bottom: 0;
 
         .footer.content {
             padding-bottom: 25px;
