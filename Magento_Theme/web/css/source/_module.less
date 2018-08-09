@@ -190,7 +190,8 @@
             }
             .block-content {
                 .lib-css(color, @footer-block__content-color);
-                font-size: @font-size__base;
+                font-size: @font-size__s;
+                line-height: @footer-line-height;
 
                 strong {
                     font-family: @font-family__primary;
@@ -201,7 +202,6 @@
                 }
                 li {
                     margin-bottom: @indent__s;
-                    line-height: @footer-line-height;
                 }
                 a {
                     .lib-css(color, @footer-link__color);
