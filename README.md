@@ -3,7 +3,7 @@
 use prefix for new variable, i'm using @theme_variable_name for now.
 
 Magento_Theme\web\css\source\_extend.less
-- top priority overrride
+- top priority override
 - only use _extend.less on child theme?, not sure.
 
 web\css\source\_theme.less
